@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f8f6;
+    color: #20302b;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 74px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.navbar a {
+    color: #20302b;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+.dashboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 58px 25px;
+}
+
+.welcome {
+    padding: 42px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, rgba(24, 49, 45, .82), rgba(24, 49, 45, .25)), url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1500&q=80") center/cover;
+    color: #fff;
+}
+
+.eyebrow {
+    color: #e8794f;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.welcome h1 {
+    margin: 12px 0;
+    font-size: 38px;
+}
+
+.welcome p:last-child {
+    max-width: 560px;
+    line-height: 1.6;
+}
+
+.summary {
+    margin: 25px 0;
+    padding: 22px 28px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.summary strong {
+    font-size: 34px;
+}
+
+.summary p:last-child {
+    color: #68756f;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.action-card {
+    min-height: 200px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #fff;
+    color: #20302b;
+    text-decoration: none;
+}
+
+.action-card h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.action-card p {
+    color: #68756f;
+    line-height: 1.5;
+}
+
+.action-icon {
+    color: #e8794f;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .actions {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        padding: 30px 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f6f8f6;
+    color: #20302b;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 74px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.navbar a {
+    color: #20302b;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 5px;
+    background: #e8794f;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-small {
+    padding: 10px 14px;
+}
+
+.page-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.page-heading {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.eyebrow, .place-country {
+    color: #d66e49;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.page-heading h1 {
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.page-heading > p:last-child {
+    color: #68756f;
+}
+
+.place-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.place-card {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.place-card > img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 20px;
+}
+
+.place-country {
+    margin: 0;
+}
+
+.place-info h2 {
+    margin: 8px 0 4px;
+    font-size: 22px;
+}
+
+.place-location, .added-by {
+    color: #68756f;
+    font-size: 14px;
+}
+
+.description {
+    min-height: 54px;
+    line-height: 1.5;
+}
+
+.added-by {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0ed;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 55px 20px;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+
+.empty-state p {
+    margin-bottom: 24px;
+    color: #68756f;
+}
+
+@media (max-width: 850px) {
+    .place-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .place-grid {
+        grid-template-columns: 1fr;
+    }
+}
